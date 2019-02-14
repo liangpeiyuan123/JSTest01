@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global全局对象</title>
+    <script>
+        var s = encodeURI("传智播客");
+        document.write(s + "<br>");
+        var s2 = decodeURI("%E4%BC%A0%E6%99%BA%E6%92%AD%E5%AE%A2");
+        document.write(s2 + "<br>");
+        var num = parseInt("234abc");
+        document.write(num+1 + "<br>");
+        var a = NaN;
+        var flag = isNaN(a);
+        document.write(flag);
+        var str = "alert(123)";
+        eval(str);
+    </script>
+</head>
+
+<body>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>灯泡开关</title>
+
+</head>
+<body>
+<img id="img" src="img/off.gif">
+<script>
+   //获取图片对象
+    var light = document.getElementById("img");
+    //灯泡默认为关
+    var flag = false;
+    light.onclick = function () {
+        if(flag){
+            //如果灯泡开的就给关掉
+            light.src="img/off.gif";
+            flag = false;
+        }else {
+            light.src="img/on.gif";
+            flag = true;
+        }
+    }
+
+</script>
+
+</body>
+</html>

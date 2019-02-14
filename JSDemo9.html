@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>取1-100之间的随机整数</title>
+    <script>
+      //先获取0-1之间的随机数
+      //乘以100，获取到的是0-99.999之间的数
+      //向下取整，获取0-99之间的整数
+      //加1，就获取到了1-100之间的整数
+       var number =  Math.floor(Math.random()*100)+1;
+        document.write(number);
+    </script>
+</head>
+
+<body>
+
+</body>
+</html>

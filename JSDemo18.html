@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5秒后自动跳转到百度</title>
+  <style>
+      p{
+          text-align:center;
+      }
+      span{
+          color: red;
+      }
+  </style>
+
+</head>
+<body>
+    <p>
+    <span id="number">5</span>秒之后，自动跳转。。。
+
+    </p>
+  <script>
+      var second = 5;
+      //定义一个方法，让秒数递减
+      function showTime() {
+          second--;
+          if (second <= 1){
+              location.href = "https://www.baidu.com";
+          }
+          var time = document.getElementById("number");
+          //修改标签体的内容
+          time.innerHTML = second;
+      }
+      //使用定时器。每一秒执行一次方法
+      setInterval(showTime,1000);
+
+
+
+
+  </script>
+
+
+</body>
+</html>
